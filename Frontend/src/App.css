@@ -1,0 +1,32 @@
+body {
+  background-color: #fff5f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #d63384;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 16px;
+  background-color: #ffe6ee;
+}
+
+.btn-pink {
+  background-color: #d63384;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 22px;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #c2186a;
+}
