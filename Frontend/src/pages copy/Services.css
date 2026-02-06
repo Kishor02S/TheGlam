@@ -1,0 +1,63 @@
+/* MAIN SECTION */
+.services-section {
+  background-color: #fff5f8;
+  padding: 60px 0;
+}
+
+/* PAGE TITLE */
+.section-title {
+  color: #d63384;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* SERVICE ROW */
+.service-row {
+  padding: 25px 0;
+}
+
+/* IMAGE PLACEHOLDER */
+.service-image {
+  background-color: #f3d6df;
+  height: 180px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  overflow: hidden;
+}
+
+/* WHEN YOU ADD REAL IMAGE */
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SERVICE TITLE */
+.service-title {
+  color: #d63384;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* DESCRIPTION */
+.service-desc {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* PRICE */
+.service-price {
+  color: #c2186a;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* DIVIDER */
+.service-divider {
+  border-color: #e6b8c6;
+}

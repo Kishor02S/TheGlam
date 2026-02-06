@@ -1,0 +1,57 @@
+.admin-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.admin-container h2 {
+  margin-bottom: 20px;
+}
+
+.admin-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.admin-container button {
+  width: 100%;
+  padding: 10px;
+  background: #e75480;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-dashboard {
+  padding: 40px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-dashboard th {
+  background-color: #ffe4ec;
+}

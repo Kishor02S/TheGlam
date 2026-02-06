@@ -1,0 +1,48 @@
+.booking-section {
+  padding: 60px 0;
+  background: #fff5f9;
+}
+
+/* Banner */
+.booking-banner {
+  background: #f3a6c8;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.booking-banner h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/* Card */
+.booking-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs */
+.booking-card .form-control,
+.booking-card .form-select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+.book-btn {
+  background: #d96c9f;
+  border: none;
+  padding: 12px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.book-btn:hover {
+  background: #c55a8a;
+}

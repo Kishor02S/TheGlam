@@ -1,0 +1,58 @@
+/* MAIN SECTION */
+.about-section {
+  background-color: #fff5f8;
+  padding: 60px 0;
+}
+
+/* TITLES */
+.section-title {
+  color: #d63384;
+  font-weight: 600;
+}
+
+.sub-title {
+  color: #d63384;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* IMAGE BOXES */
+.about-image-box {
+  background-color: #f3d6df;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  overflow: hidden;
+}
+
+/* LARGE IMAGE */
+.about-image-box.large {
+  height: 220px;
+}
+
+/* SMALL IMAGE */
+.about-image-box.small {
+  height: 140px;
+}
+
+/* WHEN YOU ADD IMAGES LATER */
+.about-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DIVIDER */
+.divider {
+  margin: 50px 0;
+  border-color: #e6b8c6;
+}
