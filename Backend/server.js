@@ -7,12 +7,11 @@ import { fileURLToPath } from "url";
 
 import bookingRoutes from "./routes/bookingRoutes.js";
 
-// Load env variables
 dotenv.config();
 
 const app = express();
 
-// ES module fix for __dirname
+// ES module fix
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -23,25 +22,27 @@ app.use(express.json());
 // API routes
 app.use("/api/bookings", bookingRoutes);
 
-// MongoDB connection
+// MongoDB
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error(err));
 
-// Serve frontend (production)
-app.use(express.static(path.join(__dirname,"..", "Frontend", "build","index.html")));
-// Serve frontend static files
-app.use(express.static(path.join(__dirname,"..", "Frontend", "build","index.html")));
+// ✅ CORRECT FRONTEND PATH
+const frontendBuildPath = path.join(
+  __dirname,
+  "..",
+  "Frontend",
+  "build"
+);
 
-// SPA fallback (Express 5 compatible)
-app.use((req, res) => {
-  res.sendFile(
-    path.resolve(__dirname,"..", "Frontend", "build", "index.html")
-  );
+// ✅ Serve static files
+app.use(express.static(frontendBuildPath));
+
+// ✅ SPA fallback
+app.get("*", (req, res) => {
+  res.sendFile(path.join(frontendBuildPath, "index.html"));
 });
-
-
 
 // Start server
 const PORT = process.env.PORT || 5000;
