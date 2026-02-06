@@ -4,7 +4,7 @@ const AdminDashboard = () => {
   const [data,setData] = useState([])
 
   useEffect(()=>{
-    fetch('http://localhost:5000/api/bookings')
+    fetch('https://theglam-10.onrender.com/api/bookings')
       .then(res=>res.json())
       .then(setData)
   },[])
