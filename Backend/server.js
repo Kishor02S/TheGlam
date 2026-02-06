@@ -30,9 +30,9 @@ mongoose
   .catch((err) => console.error(err));
 
 // Serve frontend (production)
-app.use(express.static(path.join(__dirname,"..", "Frontend", "build")));
+app.use(express.static(path.join(__dirname,"..", "Frontend", "build","index.html")));
 // Serve frontend static files
-app.use(express.static(path.join(__dirname,"..", "Frontend", "build")));
+app.use(express.static(path.join(__dirname,"..", "Frontend", "build","index.html")));
 
 // SPA fallback (Express 5 compatible)
 app.use((req, res) => {
